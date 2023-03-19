@@ -1,0 +1,40 @@
+
+:root{
+  --primary-color: #211826;
+  --second-color: #9B38FF
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width :280px) and (max-width:1080px){
+  body::-webkit-scrollbar{
+    display:none;
+  }
+}
+
+body{
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  background-color: var(--primary-color);
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color :var(--secundary-color)
+}
+
+body , button{
+  
+}

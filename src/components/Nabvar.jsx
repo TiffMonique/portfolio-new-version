@@ -1,13 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md";
-import { motion } from "framer-motion";
-
-import { useScroll } from "./UseScroll";
 
 function Nabvar() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  // const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <Nav>
       <div className="brand__container">

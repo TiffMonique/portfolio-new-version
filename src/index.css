@@ -1,6 +1,6 @@
 
 :root{
-  --primary-color: #211826;
+  --primary-color: #210C2C;
   --second-color: #9B38FF
 }
 
@@ -8,13 +8,15 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  border: none
+  border: none;
+  
 }
 
 html{
   scroll-behavior: smooth;
   height: 100%;
   overflow-x: hidden;
+  background: var(--primary-color);
 }
 
 @media screen and (min-width :280px) and (max-width:1080px){
@@ -36,6 +38,6 @@ body{
   background-color :var(--secundary-color)
 }
 
-body , button{
-  
+ button{
+  cursor: pointer;
 }

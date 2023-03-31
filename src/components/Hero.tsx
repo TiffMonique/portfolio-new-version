@@ -3,7 +3,10 @@ import styled from "styled-components"
 import Nabvar from './Nabvar';
 import '../index.css'
 import monique from "../assets/monique.png"
+import grid from "../assets/grid.svg"
 import Button, {IButton} from './Button';
+import PerspectiveGrid from './PerspectiveGrid/PerspectiveGrid';
+import Light from './Light';
 
 const buttonStyle: IButton = {
   fontSize: '20px',
@@ -80,6 +83,12 @@ const Section = styled.section`
       left: 879.57px;
       top: 102px;
     }
+
+    .grid img{
+       width: 100%;
+       display: block;
+    }
+    
     button{
       position: absolute;
       width: 206px;
@@ -97,8 +106,16 @@ const Section = styled.section`
 `;
 
 function Hero() {
+  const lightData = {
+    width: '1440px',
+    height: '741px',
+    left: '0px',
+    top: '-553px',
+    background: 'radial-gradient(50% 50% at 50% 50%, #BD82F8 0%, rgba(33, 12, 44, 0) 100%)',
+  };
   return (
     <Section id="hero">
+      <Light light={lightData}/>
       <Nabvar />
       <div className="content">
         <div className="subTitle">
@@ -116,7 +133,11 @@ function Hero() {
           Download CV
         </Button>
         <img src={monique} alt="Monique" />
+         
+        <PerspectiveGrid />
+        
       </div>
+       <img className="grid" src={grid} alt="grid" />
     </Section>
   )
 }
